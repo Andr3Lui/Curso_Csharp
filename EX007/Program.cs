@@ -4,8 +4,19 @@
     {
         static void Main(string[] args)
         {
-            double nota_final = 29;
+            double nota_final, B1, B2, B3, B4;
             string resultado;
+
+            Console.Write("Digite a primeira nota do aluno:");
+            B1 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a segunda nota do aluno:");
+            B2 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a terceira nota do aluno:");
+            B3 = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite a quarta nota do aluno:");
+            B4 = Convert.ToDouble(Console.ReadLine());
+
+            nota_final = (B1 + B2 + B3 + B4) / 4;
 
             if (nota_final >= 60)
             {
